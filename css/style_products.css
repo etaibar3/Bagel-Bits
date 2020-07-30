@@ -1,0 +1,148 @@
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: underline; /* gets rid of underlines */
+    color: #555;
+}
+
+a:hover {
+    color: coral;
+}
+
+#mainHeader {
+    background-image: url('../images/mainBack.jpg');
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+#navBar {
+    background-color: #333;
+    color: white;
+}
+
+#navBar ul {
+    padding: 0;
+    list-style: none;
+    
+}
+
+#navBar li {
+    display: inline;
+}
+
+#navBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+
+#mainFooter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin-top: 0px;
+}
+
+.socialMedia {
+    position: fixed;
+
+    right: 0;
+    padding: 20px 0px;
+
+    display: block;
+    color: transparent;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socialMedia:hover {
+    color: transparent;
+    
+}
+
+#twitter {
+    position: fixed;
+    top: 65%;
+    background-image: url('../images/twitter.png');
+}
+
+#facebook {
+    top: 73%;
+    background-image: url('../images/facebook.png');
+}
+
+#instagram {
+    background-image: url('../images/instagram.png');
+    top: 81%;
+}
+
+ .wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* Can be more than 2 percentages */
+    grid-gap: 0em;
+    color: black;
+} 
+
+.wrapper div{
+    background-color:rgba(255, 127, 80, 0.507);
+    padding: 1em;
+
+    list-style-type: none;
+}
+
+.wrapper > div:nth-child(odd) {
+    background-color: rgba(221, 221, 221, 0.425);
+}
+
+.wrapper p {
+    display: inline;
+    margin-top: 27px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 20px;
+    font-style: italic;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* makes them horizontally aligned */
+    /* grid-auto-rows: 70px; */
+    grid-gap: 1em;
+}
+
+.description {
+    font-size: 16px !important; 
+
+}
+
+
+/* Any styles in here will only take affect if it's under 600 pixels */
+@media(max-width:600px) {
+    #main {
+        width: 100%;
+        float: none;
+    }
+
+    #sideBar {
+        width: 100%;
+        float: none;
+    }
+}
